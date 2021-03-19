@@ -1,8 +1,5 @@
 
-<?php
-    include_once "./login.php";
-        
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,22 +12,12 @@
 
 <body>
     
-    <form autocomplete= "off" action="" class= "form-box" method= "post">
+    <form action= "login-handler.php" autocomplete= "off" action="" class= "form-box" method= "post">
         <h2>simple login</h2>
         <input type="text" name= "username" placeholder= "username"><br>
         <input type="text" name= "email" placeholder= "email"><br>
         <button name= "submit">submit</button>
     </form>
     
-    <?php
-        if(isset($_POST['submit'])){
-            // click submit
-            $userName = $_POST['username'];
-            $email = $_POST['email'];
-
-            $sqlStatement = "INSERT INTO demo_user (username, password) VALUES ('$userName', '$email');";
-            mysqli_query($connection, $sqlStatement);
-        }
-    ?>
 </body>
 </html>
