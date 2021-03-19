@@ -15,7 +15,7 @@
 
 <body>
     
-    <form action="" class= "form-box" method= "post">
+    <form autocomplete= "off" action="" class= "form-box" method= "post">
         <h2>simple login</h2>
         <input type="text" name= "username" placeholder= "username"><br>
         <input type="text" name= "email" placeholder= "email"><br>
